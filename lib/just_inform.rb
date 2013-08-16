@@ -1,10 +1,3 @@
-require 'rubygems'
-require 'bundler/setup'
-
-FILE_ROOT = File.expand_path('.') 
-
-Dir[File.join(FILE_ROOT,"lib/just_inform/*.rb")].each {|file| require file }
-
 module JustInform; end
 
 module Nokogiri
@@ -31,3 +24,9 @@ module Nokogiri
     end
   end
 end
+
+require 'just_inform/downloader'
+require 'just_inform/information_collection'
+require 'just_inform/information_collection_request'
+require 'just_inform/parser'
+require 'just_inform/version'
