@@ -1,5 +1,6 @@
 module JustInform
   class Downloader
+    require 'fileutils' unless defined?(FileUtils)
     require 'open-uri' unless defined?(OpenURI)
     
     def self.get_latest
