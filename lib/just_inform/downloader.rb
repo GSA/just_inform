@@ -16,7 +16,11 @@ module JustInform
     private
     
     def self.current_file?
-      true if File.exists?(File.join 'data', self.current_filename)
+      dir = 'data'
+      unless File.directory?(dir)
+        FileUtils.mkdir_p(dir)
+      end
+      true if File.exists?(File.join dir, self.current_filename)
     end
     
     def self.current_filename
