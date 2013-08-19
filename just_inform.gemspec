@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
     "just_inform.gemspec",
     "LICENSE.md",
     "README.md",
-    'data',
     "lib/just_inform.rb",
     "lib/just_inform/downloader.rb",
     "lib/just_inform/information_collection.rb",

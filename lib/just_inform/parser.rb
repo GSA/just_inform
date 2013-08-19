@@ -1,11 +1,14 @@
 module JustInform
   class Parser
     require 'nokogiri' unless defined?(Nokogiri)
-    
     attr_accessor :doc
     
     def initialize
       load
+    end
+    
+    def inspect
+      "#{self.class} - #{self.doc.children.first.name}"
     end
     
     # Show top 10 forms, PRA.top(sort_by_symbol, number_of_results)
@@ -56,9 +59,8 @@ module JustInform
     
     # load XML data into Nokogiri and set @doc instance variable
     def load
-      puts 'Loading >50 MB of XML data and parsing with Nokogiri, this could take awhile (e.g. 2-3m)'
       data = Downloader.get_latest
-      @doc = Nokogiri::XML(data)
+      @doc = ::Nokogiri::XML(data)
     end
     
 
