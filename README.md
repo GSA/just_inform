@@ -21,9 +21,10 @@ You can also sort by burden hours (:burden) and number of responses (:responses)
 
 ## Todo
 
-* Add tests with 100% coverage
-* Add ActiveRecord like finder methods (e.g. Parser.find_by_title('Passport'))
+* Add tests with 100% coverage.
+* Add ActiveRecord like finder methods (e.g. Parser.find_by_title('Passport')).
 * Build into a Sinatra/Rails app that creates an API/webpage exhibiting the topX forms in gov by burden hours, cost, and response numbers.  This would be updated daily from the XML feed.
+* Automatically remove downloaded temp files.
 
 ## License
 [MIT License]
