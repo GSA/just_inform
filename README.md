@@ -26,9 +26,12 @@ You can also sort by burden hours (:burden) and number of responses (:responses)
 * Build into a Sinatra/Rails app that creates an API/webpage exhibiting the topX forms in gov by burden hours, cost, and response numbers.  This would be updated daily from the XML feed.
 * Automatically remove downloaded temp files.
 
-## License
-[MIT License]
+## Public domain
 
-  [RegInfo.gov]: http://www.reginfo.gov
-  [MIT License]: https://github.com/GSA-OCSIT/just_inform/blob/master/LICENSE.md
-  [README]: https://github.com/GSA-OCSIT/just_inform/blob/master/README.md
+This project is in the public domain within the United States, and
+copyright and related rights in the work worldwide are waived through
+the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+
+All contributions to this project will be released under the CC0
+dedication. By submitting a pull request, you are agreeing to comply
+with this waiver of copyright interest.
